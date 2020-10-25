@@ -2,8 +2,8 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "shubhamkanwar10650@gmail.com";
-    $email_subject = "Message from shubhamkanwar10650@gmail.com";
+    $email_to = "xmohammadsharfuddinx@gmail.com";
+    $email_subject = "Message from www.mohammadsharfuddin.com";
  
     function died($error) {
         // your error code can go here
@@ -18,7 +18,7 @@ if(isset($_POST['email'])) {
     // validation expected data exists
     if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
-        !isset($_POST['password']) ||
+        !isset($_POST['phone']) ||
         !isset($_POST['subject']) ||
         !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
@@ -28,7 +28,7 @@ if(isset($_POST['email'])) {
  
     $name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
-    $phone = $_POST['password']; // required
+    $phone = $_POST['phone']; // required
     $subject = $_POST['subject']; // required
     $message = $_POST['message']; // required
     
@@ -67,7 +67,7 @@ if(isset($_POST['email'])) {
  
     $email_message .= "First Name: ".clean_string($name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "password: ".clean_string($password)."\n";
+    $email_message .= "Phone: ".clean_string($phone)."\n";
     $email_message .= "Subject: ".clean_string($subject)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
  
@@ -80,20 +80,7 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- include your own success html here -->
  
-<!DOCTYPE html>
-<html>
-  <head>
-    <base href="/public/">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico">
-    <title>Payment Page</title>
-    <link rel="stylesheet" href="assets/css/payment_main.css?v=4.4">
-  </head>
-  <body>
-    <div id="app" />
-  <script type="text/javascript" src="vendor.91946f9ec6c6020ac2d2.js?47c438aa50b9a2833320"></script><script type="text/javascript" src="index.5b82f8422e74dca53d87.js?47c438aa50b9a2833320"></script></body>
-</html>
+Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
  
